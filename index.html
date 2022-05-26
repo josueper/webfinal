@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Josué Pérez</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h2><a href="#seccion1">Josué Pérez</a></h2>
+            </div>
+            <ul>
+                <li><a href="#seccion2">SERVICIOS</a></li>
+                <li><a href="#seccion3">TRABAJOS</a></li>
+                <li><a href="https://www.instagram.com/josuebtl/">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="seccion1">
+            <div class="wrap">
+                <div class="icono">
+                    <img src="imgs/josue.png" alt="" class="imagen">
+                </div>
+                <h1>Josué Pérez Ortiz</h1>
+                <p>Me desempeño como editor de fotografía y vídeo, me especializo en la creación de composiciones en el programa Adobe
+                Photoshop, tengo capacidad para la creación constante de nuevos contenidos visuales.</p>
+                    <div class="down animate__animated animate__bounce animate__infinite">
+                        <a href="#seccion2"><i class="fa-solid fa-circle-chevron-down"></i></a>
+                    </div>
+            </div>
+    </section>
+
+    <section class="servicios" id="seccion2">
+        <div class="wrap">
+            <h1>Mis Servicios</h1>
+            <p> Producción y edición de contenido audiovisual, edición de fotografía, montajes e ilustraciones, 
+                implemento la suite de adobe y me desempeño de manera eficiente con los programas Adobe Illustrator, 
+                Adobe Photoshop, Adobe Premiere, entre otros. </p>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="imgs/slider1.jpg" alt=""></div> 
+                      <div class="swiper-slide"><img src="imgs/slider2.jpg" alt=""></div>
+                     
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        </div>
+    </section>  
+
+    <section class="trabajos" id="seccion3">
+        <div class="wrap">
+            <h1>Mis trabajos</h1>
+            <p>El siguiente reel muestra una serie de proyectos en los cuales 
+                me he involucrado de diversas formas. </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3zDH8h4w1KA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="contacto" id="seccion4">
+        <div class="wrap">
+            <h1>Ubicación</h1>
+            <p>Actualmente me encuentro en la ciudad de Medellín, Colombia</p>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.0166103372123!2d-75.58482494205883!3d6.259354465088423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44291ace0905c5%3A0xa82ebb8889ab4dae!2sUniversidad%20Cat%C3%B3lica%20Luis%20Amig%C3%B3%20-%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1652381084569!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+     
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <script>
+ var swiper = new Swiper(".mySwiper", {
+     slidesPerView: "auto",
+     spaceBetween: 30,
+     pagination: {
+     el: ".swiper-pagination",
+     clickable: true,
+     },
+ });
+ </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cedarville Cursive', cursive;
+font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: beige;
+}
+
+
+section .icono
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 100em;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    background-color: beige;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: #01baef;
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+nav .container ul li a:hover{
+    color: beige;
+    background-color:#417D7A;
+}
+
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: 95vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    color: beige;
+    font-size: 1.4em;
+}
+
+.bienvenida .down {
+    margin-top: 2em;
+}
+
+.bienvenida {
+    background-color: #1A3C40;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 59.59px) calc(100% - 50px),50% 100%,calc(50% - 59.59px) calc(100% - 50px),0 calc(100% - 50px));
+}
+
+.servicios {
+
+    background-color:#417D7A;
+    padding-top: 5em;
+    clip-path: polygon(0 0,calc(50% - 3.64px - 59.59px) 0,50% calc(50px + 3.05px),calc(50% + 3.64px + 59.59px) 0,100% 0,100% 100%,0 100%);
+    margin-top: -40px;
+}
+
+.trabajos {
+    background-color: #1D5C63;
+}
+
+.contacto {
+    background-color:#1A3C40;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 2em;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+
+
+  .top {
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 59.59px) calc(100% - 50px),50% 100%,calc(50% - 59.59px) calc(100% - 50px),0 calc(100% - 50px));
+  }
+  .bottom {
+    clip-path: polygon(0 0,calc(50% - 3.64px - 59.59px) 0,50% calc(50px + 3.05px),calc(50% + 3.64px + 59.59px) 0,100% 0,100% 100%,0 100%);
+    margin-top: -10em;
+  }
+
+  .icono {
+    margin-top: 2em;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    padding-left: 3em;
+}
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    body{
+        width: 100%;
+    }
+
+    header .menu{
+        flex-direction: column;
+    }
+    
+    .icono{
+        flex-basis: 50%;
+        padding-bottom: 1em
+    }
+    .menu-items {
+        font-size: 1em;
+        padding:1em;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .container h1{
+        font-size: 1em;
+        text-align: left;
+    }
+
+    p{
+        font-size: 1 em;
+        line-height: 2 em;
+    }
+    
+}
